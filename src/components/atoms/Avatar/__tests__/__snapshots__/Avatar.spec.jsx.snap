@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  -webkit-flex: 0 0;
+  -ms-flex: 0 0;
+  flex: 0 0;
+  padding: 10px;
+}
+
+<img
+  className="c0"
+  src="src_stub"
+/>
+`;
+
+exports[`it works 64px 1`] = `
+.c0 {
+  -webkit-flex: 0 0 64px;
+  -ms-flex: 0 0 64px;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+}
+
+<img
+  className="c0"
+  size="64px"
+  src="src_stub"
+/>
+`;
