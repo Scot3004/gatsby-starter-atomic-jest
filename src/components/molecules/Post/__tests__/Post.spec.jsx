@@ -7,9 +7,9 @@ const stub = {
   title: 'Title stub',
   image: 'image_stub',
   frontmatter: {
-    date: "date stub"
+    date: 'date stub'
   },
-  html: "html stub"
+  html: 'html stub'
 }
 
 test('it works', () => {

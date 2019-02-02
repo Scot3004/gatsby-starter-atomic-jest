@@ -21,7 +21,7 @@ export const Post = ({ image, title, frontmatter, html }) => (
 Post.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
-  frontmatter:PropTypes.shape({
+  frontmatter: PropTypes.shape({
     date: PropTypes.string
   }),
   html: PropTypes.string
