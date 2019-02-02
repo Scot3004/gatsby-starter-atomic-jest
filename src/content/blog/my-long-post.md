@@ -65,7 +65,7 @@ end a line with two or more spaces, then type return.
 
 ### Headers
 
-Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
+Markdown supports two styles of headers, [Setext](http://docutils.sourceforge.net/mirror/setext.html) and [atx](http://www.aaronsw.com/2002/atx/).
 
 Optionally, you may "close" atx-style headers. This is purely
 cosmetic -- you can use this if you think it looks better. The
@@ -92,11 +92,11 @@ Markdown allows you to be lazy and only put the `>` before the first
 line of a hard-wrapped paragraph:
 
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
+> id sem consectetuer libero luctus adipiscing.
 
 Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
 adding additional levels of `>`:
@@ -112,8 +112,8 @@ and code blocks:
 
 > ## This is a header.
 >
-> 1.   This is the first list item.
-> 2.   This is the second list item.
+> 1.  This is the first list item.
+> 2.  This is the second list item.
 >
 > Here's some example code:
 >
@@ -165,9 +165,9 @@ If you instead wrote the list in Markdown like this:
 
 or even:
 
-3. Bird
-1. McHale
-8. Parish
+3.  Bird
+1.  McHale
+8.  Parish
 
 you'd get the exact same HTML output. The point is, if you want to,
 you can use ordinal numbers in your ordered Markdown lists, so that
@@ -280,7 +280,7 @@ end tell
 
 Markdown supports two style of links: *inline* and *reference*.
 
-In both styles, the link text is delimited by [square brackets].
+In both styles, the link text is delimited by \[square brackets\].
 
 To create an inline link, use a set of regular parentheses immediately
 after the link text's closing square bracket. Inside the parentheses,
