@@ -26,9 +26,11 @@ export default props => (
             node {
               id
               excerpt(pruneLength: 200)
+              fields {
+                slug
+              }
               frontmatter {
                 date(formatString: "MMMM DD, YYYY")
-                path
                 title
                 image
               }

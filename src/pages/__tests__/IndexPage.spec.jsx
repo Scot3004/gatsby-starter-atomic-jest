@@ -18,9 +18,11 @@ const data = {
           'excerpt': '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…',
           'frontmatter': {
             'date': 'November 07, 2017',
-            'path': '/blog/my-first-post',
             'title': 'My first blog post',
             'image': 'https://www.secorto.com/img/logo.png'
+          },
+          'fields': {
+            'slug': '/blog/my-first-post'
           }
         }
       }

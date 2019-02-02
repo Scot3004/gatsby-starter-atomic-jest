@@ -9,6 +9,7 @@ export const PostList = ({ data }) => (
         title={post.node.frontmatter.title}
         image={post.node.frontmatter.image}
         excerpt={post.node.excerpt}
+        slug={post.node.fields.slug}
       />
     ))}
   </>

@@ -40,41 +40,29 @@ exports[`it works 1`] = `
   flex: 1;
 }
 
-.c4 {
-  margin: 0;
-}
-
-.c3 {
-  margin: 0 0 12px 0;
-  padding: 0;
-}
-
 <div
   className="c0"
 >
   <img
-    alt="My first blog post"
+    alt="Title stub"
     className="c1"
     size="64px"
-    src="https://www.secorto.com/img/logo.png"
+    src="image_stub"
   />
   <div
     className="c2"
   >
-    <a
-      href="/blog/my-first-post"
-    >
-      <h2
-        className="c3"
-      >
-        My first blog post
-      </h2>
-    </a>
-    <p
-      className="c4"
-    >
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut…
-    </p>
+    <small>
+      date stub
+    </small>
+    <div
+      className="blog-post-content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "html stub",
+        }
+      }
+    />
   </div>
 </div>
 `;
