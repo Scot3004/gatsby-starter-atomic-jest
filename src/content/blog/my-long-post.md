@@ -211,8 +211,8 @@ lazy:
 *   This is a list item with two paragraphs.
 
     This is the second paragraph in the list item. You're
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
+    only required to indent the first line. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit.
 
 *   Another item in the same list.
 
@@ -268,11 +268,13 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
+<!--lint disable code-block-style-->
 ```
 tell application "Foo"
     beep
 end tell
 ```
+<!--lint enable emphasis-marker strong-marker-->
 
 ## Span Elements
 
@@ -298,6 +300,7 @@ emphasis. Text wrapped with one `*` or `_` will be wrapped with an
 HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
 `<strong>` tag. E.g., this input:
 
+<!--lint disable emphasis-marker strong-marker-->
 *single asterisks*
 
 _single underscores_
@@ -306,6 +309,7 @@ _single underscores_
 
 __double underscores__
 
+<!--lint enable emphasis-marker strong-marker-->
 ### Code
 
 To indicate a span of code, wrap it with backtick quotes (`` ` ``).
