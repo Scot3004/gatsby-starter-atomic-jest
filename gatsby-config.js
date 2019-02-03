@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'Molecular starter'
   },
-  pathPrefix: '/blog',
   plugins: [
     `gatsby-plugin-styled-components`,
     {
