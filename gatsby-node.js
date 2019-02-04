@@ -46,5 +46,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value
     })
+    createNodeField({
+      name: `post_type`,
+      node,
+      value: '/' + value.split('/')[1] + '/'
+    })
   }
 }
