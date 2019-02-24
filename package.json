@@ -15,9 +15,9 @@
     "test-with-coverage": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"
   },
   "dependencies": {
-    "gatsby": "^2.0.33",
+    "gatsby": "^2.0.111",
     "gatsby-plugin-styled-components": "^3.0.1",
-    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-remark": "^2.1.12",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
