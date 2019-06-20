@@ -1,6 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: 'Molecular starter'
+    title: 'Molecular starter',
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/',
+        icon: 'home'
+      },
+      {
+        name: 'blog',
+        link: '/blog',
+        icon: 'message-square'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-styled-components`,

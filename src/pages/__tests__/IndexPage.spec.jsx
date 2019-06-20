@@ -7,7 +7,8 @@ import IndexPageWithQuery from '..';
 const data = {
   site: {
     siteMetadata: {
-      title: 'Molecular starter'
+      title: 'Molecular starter',
+      menuLinks: []
     }
   },
   allMarkdownRemark: {

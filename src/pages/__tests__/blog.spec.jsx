@@ -7,7 +7,8 @@ import ListPage from '../blog';
 const data = {
   site: {
     siteMetadata: {
-      title: 'Molecular starter'
+      title: 'Molecular starter',
+      menuLinks: []
     }
   },
   allMarkdownRemark: {

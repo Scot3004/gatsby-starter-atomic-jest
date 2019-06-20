@@ -96,6 +96,7 @@
     ]
   },
   "dependencies": {
+    "feather-icons": "^4.22.1",
     "react-icons": "^3.7.0"
   }
 }
