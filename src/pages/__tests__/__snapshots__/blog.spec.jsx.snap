@@ -15,7 +15,7 @@ exports[`query correctly 1`] = `
   color: #663399;
 }
 
-.c3 {
+.c5 {
   min-width: 0;
 }
 
@@ -24,16 +24,7 @@ exports[`query correctly 1`] = `
   grid-template-columns: 1fr;
 }
 
-.c5 {
-  -webkit-flex: 0 0 64px;
-  -ms-flex: 0 0 64px;
-  flex: 0 0 64px;
-  width: 64px;
-  height: 64px;
-  padding: 1rem;
-}
-
-.c4 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -51,15 +42,15 @@ exports[`query correctly 1`] = `
   width: 100%;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
 }
 
-.c4:last-child {
+.c3:last-child {
   margin: 0;
 }
 
-.c6 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -70,6 +61,15 @@ exports[`query correctly 1`] = `
   min-width: 0;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.c6 {
+  -webkit-flex: 0 0 64px;
+  -ms-flex: 0 0 64px;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  padding: 1rem;
 }
 
 .c8 {
@@ -95,20 +95,27 @@ exports[`query correctly 1`] = `
         Molecular starter
       </h1>
     </header>
-    <main
+    <div
       className="c3"
     >
       <div
         className="c4"
+      />
+    </div>
+    <main
+      className="c5"
+    >
+      <div
+        className="c3"
       >
         <img
           alt="My first blog post"
-          className="c5"
+          className="c6"
           size="64px"
           src="https://www.secorto.com/img/logo.png"
         />
         <div
-          className="c6"
+          className="c4"
         >
           <a
             href="/blog/my-first-post"

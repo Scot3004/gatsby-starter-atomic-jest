@@ -6,7 +6,10 @@ import BoxedLayout from '../components/layouts/BoxedLayout';
 import PostList from '../components/organisms/PostList';
 
 export const IndexPage = ({ data }) => (
-  <BoxedLayout title={data.site.siteMetadata.title}>
+  <BoxedLayout
+    title={data.site.siteMetadata.title}
+    menuLinks={data.site.siteMetadata.menuLinks}
+  >
     <PostList data={data.allMarkdownRemark.edges} />
   </BoxedLayout>
 );
@@ -18,6 +21,11 @@ export default props => (
         site {
           siteMetadata {
             title
+            menuLinks {
+              name
+              link
+              icon
+            }
           }
         }
         allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {

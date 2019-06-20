@@ -6,6 +6,7 @@ import Container from '../../atoms/Container';
 import MainTitle from '../../atoms/MainTitle';
 import MainContainer from '../../atoms/MainContainer';
 import PageGrid from '../../atoms/PageGrid';
+import Navigation from '../../organisms/Navigation';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const BoxedLayout = ({ title, children }) => (
+export const BoxedLayout = ({ title, menuLinks, children }) => (
   <>
     <Helmet>
       <title>{title}</title>
@@ -26,6 +27,7 @@ export const BoxedLayout = ({ title, children }) => (
         <header>
           <MainTitle>{title}</MainTitle>
         </header>
+        <Navigation menuLinks={menuLinks} />
         <MainContainer>{children}</MainContainer>
       </PageGrid>
     </Container>
@@ -34,6 +36,7 @@ export const BoxedLayout = ({ title, children }) => (
 
 BoxedLayout.propTypes = {
   title: PropTypes.string.isRequired,
+  menuLinks: PropTypes.arrayOf(PropTypes.node).isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node

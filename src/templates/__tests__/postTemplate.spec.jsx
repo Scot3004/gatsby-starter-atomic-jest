@@ -5,6 +5,12 @@ import renderer from 'react-test-renderer';
 import PostTemplate from '../postTemplate';
 
 const data = {
+  site: {
+    siteMetadata: {
+      title: 'Molecular starter',
+      menuLinks: []
+    }
+  },
   markdownRemark: {
     fields: {
       slug: '/blog/my-first-post/'

@@ -6,7 +6,10 @@ import PostList from '../../organisms/PostList';
 
 export default function ListPage({ data }) {
   return (
-    <BoxedLayout title={data.site.siteMetadata.title}>
+    <BoxedLayout
+      title={data.site.siteMetadata.title}
+      menuLinks={data.site.siteMetadata.menuLinks}
+    >
       <PostList data={data.allMarkdownRemark.edges} />
     </BoxedLayout>
   );

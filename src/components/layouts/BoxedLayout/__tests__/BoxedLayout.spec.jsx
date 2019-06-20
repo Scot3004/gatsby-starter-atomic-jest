@@ -5,7 +5,11 @@ import BoxedLayout from '..';
 
 test('it works', () => {
   const tree = renderer
-    .create(<BoxedLayout title="title_stub">content stub</BoxedLayout>)
+    .create(
+      <BoxedLayout title="title_stub" menuLinks={[]}>
+        content stub
+      </BoxedLayout>
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
